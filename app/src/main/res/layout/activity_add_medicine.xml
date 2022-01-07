@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicine">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BFD7EA"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0B3954"
+                android:drawableRight="@drawable/pill_add_icon__1_"
+                android:fontFamily="@font/amaranth"
+                android:padding="20dp"
+                android:text="Yeni İlaç Ekle"
+                android:textAlignment="center"
+                android:textColor="#BFD7EA"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/medicineNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="İlacın Adı :"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#0B3954"
+                android:textColorHint="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/pzt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Pazartesi"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Salı"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Çarşamba"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/pers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Perşembe"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Cuma"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Cumartesi"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/pazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:minHeight="48dp"
+                android:text="Pazar"
+                android:textColor="#0B3954"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/frequencyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="Günde kaç kez kullanacaksınız"
+                android:inputType="number"
+                android:textColor="#0B3954"
+                android:textColorHint="#0B3954"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/saveMedicineButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#0B3954"
+                android:drawableLeft="@drawable/rsz_1actions_document_save_icon"
+                android:fontFamily="@font/amaranth"
+                android:padding="30dp"
+                android:text="İlacı Kaydet"
+                android:textColor="#BFD7EA" />
+
+            <Button
+                android:id="@+id/myMedicines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="100dp"
+                android:background="#0B3954"
+                android:drawableLeft="@drawable/rsz_pills_red_icon__1_"
+                android:fontFamily="@font/amaranth"
+                android:padding="30dp"
+                android:text="Bugün İçmem Gereken İlaçlarım"
+                android:textColor="#BFD7EA" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

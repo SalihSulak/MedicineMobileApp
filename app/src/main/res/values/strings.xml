@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MedicineApp</string>
+    <string name="todayIs">Bugün Günlerden Çarşamba</string>
+    <string name="allMedicinesTitle">Tüm İlaçlarınız</string>
+    <string name="allMedicinesText">Burada eklediğiniz tüm ilaçları görebilirsiniz</string>
+
+</resources>
